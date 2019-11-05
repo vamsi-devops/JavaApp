@@ -7,4 +7,5 @@ COPY src /usr/local/service/src
 WORKDIR /usr/local/service
 RUN mvn package
 EXPOSE 8080
-CMD ["java","-jar","target/DemoPipelineJava-0.0.1-SNAPSHOT.war"]
+ADD target/DemoPipelineJava-0.0.1-SNAPSHOT.war DemoPipelineJava-0.0.1-SNAPSHOT.war
+ENTRYPOINT ["java","-jar","target/DemoPipelineJava-0.0.1-SNAPSHOT.war"]
