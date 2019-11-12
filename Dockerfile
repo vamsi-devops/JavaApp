@@ -11,5 +11,5 @@ WORKDIR /usr/local/service
 RUN mvn clean package
 EXPOSE 8080
 # Take the war and copy to webapps of tomcat
-COPY target/*.war /usr/local/tomcat/webapps/*.war
+COPY /usr/local/service/target/DemoPipelineJava-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/DemoPipelineJava-0.0.1-SNAPSHOT.war
 #ENTRYPOINT ["java","-jar","target/DemoPipelineJava-0.0.1-SNAPSHOT.war"]
