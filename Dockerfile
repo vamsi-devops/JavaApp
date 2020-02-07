@@ -1,5 +1,5 @@
 FROM tomcat
-LABEL maintainer='venkatesh singu'
+LABEL maintainer='Shivakarthik.k'
 RUN rm -rf /usr/local/tomcat/webapps/*
 #copying
 COPY target/**.war /usr/local/tomcat/webapps/ROOT.war
