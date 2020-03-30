@@ -12,5 +12,9 @@ phases:
       - mvn clean package
 
 artifacts:
-  files:
+  files: 
+    - target/*
+    - index.html
+    - appspec.yml
+    - scripts/*
     - '**/*'
