@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/DemoPipelineJava.war
+  - source: /target/*.war
     destination: /tmp/codedeploy-deployment-staging-area/
   - source: /scripts/configure_http_port.xsl
     destination: /tmp/codedeploy-deployment-staging-area/
